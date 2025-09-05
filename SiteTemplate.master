@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteTemplate.master.cs" Inherits="SiteTemplate" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+        <meta charset="utf-8" />
+    <title>Site</title>
+    <asp:PlaceHolder ID="phCss" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
+        <asp:PlaceHolder ID="phHeader" runat="server" />
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <asp:PlaceHolder ID="phFooter" runat="server" />
+
+        <asp:PlaceHolder ID="phJs" runat="server" />
+    </form>
+</body>
+</html>
